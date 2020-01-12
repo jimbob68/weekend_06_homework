@@ -9,5 +9,4 @@ const Dinosaur = function (species, diet, guestsAttractedPerDay) {
 
 
 
-
 module.exports = Dinosaur;

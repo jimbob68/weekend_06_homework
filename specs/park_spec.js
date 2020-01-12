@@ -41,17 +41,33 @@ describe('Park', function() {
   });
 
   it('should be able to find the dinosaur that attracts the most visitors', function (){
-    const actual = park.collectionOfDinosaurs
+    const actual = park.collectionOfDinosaurs;
     const expected = 'Apex Predators';
     assert.strictEqual(actual, expected);
   });
 
-  it('should be able to find all dinosaurs of a particular species');
+  it('should be able to find all dinosaurs of a particular species')//, function (){
+  //   const actual = park.species('t-rex');
+  //   const expected = 2
+  //   assert.strictEqual(actual, 2)
+  // });
 
-  it('should be able to calculate the total number of visitors per day');
+  it('should be able to calculate the total number of visitors per day')// function (){
+  //   const actual = park.guestsAttractedPerDay();
+  //   assert.strictEqual(actual, 182);
+  // });
 
-  it('should be able to calculate the total number of visitors per year');
+  it('should be able to calculate the total number of visitors per year', function () {
+    const actual = park.totalGuestsAttractedPerYear();
+    assert.strictEqual(actual, 66430);
+  });
 
-  it('should be able to calculate total revenue for one year');
+  it('should be able to calculate total revenue for one year', function (){
+    const totalAnnualRevenue = park.ticketPrice *= totalGuestsAttractedPerYear;
+    assert.strictEqual(actual, 6643000);
+
+  });
+
+
 
 });
