@@ -19,6 +19,11 @@ Park.prototype.removeDinosaur = function(dinosaur) {
   this.dinosaurs.splice(indexOfDinosaurs, 1);
 };
 
+Park.prototype.guestsAttractedPerDay = function(dinosaur) {
+return this.collectionOfDinosaurs.guestsAttractedPerDay;
+
+};
+
 
 
 module.exports = Park;
